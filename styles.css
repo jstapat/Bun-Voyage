@@ -139,8 +139,7 @@ body {
 }
 
 .info-wrapper {
-  height: 33vh;
-  position: relative;
+  padding: 2rem 0;
   background-size: cover;
   background-position: 50% 69%;
   background-repeat: no-repeat;
@@ -160,7 +159,6 @@ body {
 
 .info .header {
   margin: 0 auto;
-  padding-top: 20px;
 }
 
 .eachday {
@@ -258,15 +256,6 @@ body {
     font-size: 2rem;
   }
 
-  .info-wrapper {
-    height: 35vh;
-  }
-
-  .info .header {
-    margin-top: 30px;
-    margin-bottom: 25px;
-  }
-
   .hours {
     gap: 6px;
   }
@@ -317,15 +306,6 @@ body {
     grid-template-columns: 1fr 1fr;
     margin-top: 3rem;
     align-items: center;
-  }
-
-  .info-wrapper {
-    height: 40vh;
-  }
-
-  .info .header {
-    margin-bottom: 30px;
-    padding-top: 30px;
   }
 
   .hours {
