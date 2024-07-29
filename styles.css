@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter:wght@100..900&family=Lobster&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --main-color: rgb(126, 85, 33);
+  --text-color: white;
+  --darker-text: rgb(197, 197, 197);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #252525;
+  color: var(--text-color);
+  font-family: "Inter", sans-serif;
+}
+
+.nav {
+  height: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  gap: 1rem;
+  text-align: center;
+}
+
+.nav-link {
+  color: var(--text-color);
+  margin: 0px 20px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  color: var(--main-color);
+}
+
+.hero {
+  height: 90vh;
+  position: relative;
+  background-size: cover;
+  background-position: 50% 70%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(Bilder/burgee-hero.jpg);
+  text-align: center;
+}
+
+.hero-name {
+  font-family: "Indie Flower", sans-serif;
+  font-style: italic;
+  font-size: 3.5rem;
+  line-height: 4rem;
+}
+
+.subtext {
+  font-size: 1rem;
+  margin-top: 20px;
+  color: var(--darker-text);
+}
+
+.button {
+  font-size: 1rem;
+  margin-top: 40px;
+  padding: 10px 25px;
+  border: 2px solid;
+  border-color: var(--main-color);
+  background-color: var(--main-color);
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.button:hover {
+  background-color: transparent;
+  color: var(--main-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.about {
+  display: grid;
+  padding-bottom: 2rem;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px 40px;
+}
+
+.header {
+  text-transform: uppercase;
+  border-bottom: 2px solid;
+  border-color: var(--main-color);
+  font-size: 1.6rem;
+  width: fit-content;
+}
+
+.about-text {
+  font-size: 0.9rem;
+  color: var(--darker-text);
+  padding-top: 20px;
+}
+
+.about-images {
+  padding: 20px 40px;
+  display: flex;
+  gap: 10px;
+}
+
+.about-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.about-image-large {
+  min-width: 50%;
+}
+
+.about-image-small {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info-wrapper {
+  height: 33vh;
+  position: relative;
+  background-size: cover;
+  background-position: 50% 69%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(Bilder/burgee-info.jpg);
+}
+
+.hours {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.1rem;
+  width: 100%;
+  gap: 4px;
+}
+
+.info .header {
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.eachday {
+  display: flex;
+  width: 15rem;
+  justify-content: space-between;
+}
+
+.days {
+  color: var(--darker-text);
+}
+
+.contact {
+  display: grid;
+  margin: 2rem;
+}
+
+.contact-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.contact-content {
+  margin-top: 20px;
+}
+
+.address {
+  color: var(--darker-text);
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.address-info {
+  padding: 3px 0;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-buttons .button {
+  margin-top: 10px;
+}
+
+.inverted {
+  background-color: transparent;
+  color: var(--main-color);
+}
+
+.inverted:hover {
+  background-color: var(--main-color);
+  color: var(--text-color);
+}
+
+.footer {
+  height: 15vh;
+  background-color: rgb(48, 48, 48);
+}
+
+.footer-links {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.copyright {
+  text-align: center;
+  font-size: small;
+}
+
+@media only screen and (min-width: 600px) {
+  .nav {
+    font-size: 1rem;
+  }
+
+  .hero-name {
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+
+  .subtext {
+    font-size: 1.3rem;
+    padding-top: 5px;
+  }
+
+  .button {
+    font-size: 1.2rem;
+  }
+
+  .header {
+    font-size: 2rem;
+  }
+
+  .info-wrapper {
+    height: 35vh;
+  }
+
+  .info .header {
+    margin-top: 30px;
+    margin-bottom: 25px;
+  }
+
+  .hours {
+    gap: 6px;
+  }
+
+  .eachday {
+    width: 18rem;
+    font-size: 1.1rem;
+  }
+
+  .contact {
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    align-items: center;
+    justify-items: center;
+    padding: 2rem;
+  }
+
+  .contact-img {
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .nav {
+    font-size: 1.3rem;
+  }
+
+  .hero-name {
+    font-size: 6rem;
+    line-height: 6.5rem;
+  }
+
+  .subtext {
+    font-size: 1.7rem;
+    padding-top: 10px;
+  }
+
+  .button {
+    font-size: 1.5rem;
+  }
+
+  .header {
+    font-size: 3rem;
+  }
+
+  .about {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 3rem;
+    align-items: center;
+  }
+
+  .info-wrapper {
+    height: 40vh;
+  }
+
+  .info .header {
+    margin-bottom: 30px;
+    padding-top: 30px;
+  }
+
+  .hours {
+    gap: 7px;
+  }
+
+  .eachday {
+    width: 27rem;
+    font-size: 1.2rem;
+  }
+
+  .contact {
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+
+  .contact-img {
+    width: 90%;
+  }
+
+  /* .contact-buttons {
+    flex-direction: row;
+    gap: 1rem;
+  } */
+}
+
+@media only screen and (min-width: 1400px) {
+  .container {
+    max-width: 1200px;
+    margin: 3rem auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-links {
+    flex-direction: column;
+    font-size: 14px;
+    gap: 4px;
+    padding-top: 5px;
+  }
+}
