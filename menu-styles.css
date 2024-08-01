@@ -23,6 +23,7 @@ body {
   background-color: #252525;
   color: var(--text-color);
   font-family: "Inter", sans-serif;
+  width: 100%;
 }
 
 .nav {
@@ -50,17 +51,23 @@ body {
 }
 
 .header {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-header {
+  margin: 2rem auto 0 auto;
+  width: fit-content;
   text-transform: uppercase;
   border-bottom: 2px solid;
   border-color: var(--main-color);
-  font-size: 1.6rem;
-  width: fit-content;
+  font-size: 2.5rem;
 }
 
 .menu {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 2rem auto;
+  margin: 3rem auto 1rem auto;
   gap: 1rem;
 }
 
@@ -84,27 +91,31 @@ body {
 }
 
 .burger {
-  background-image: url(Bilder/menu-burger.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(Bilder/menu-burger.jpg);
   background-size: cover;
   background-position: 50% 50%;
 }
 
 .sides {
-  background-image: url(Bilder/menu-pommes.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(Bilder/menu-pommes.jpg);
   background-size: cover;
   background-position: 50% 50%;
 }
 
 .drinks {
-  background-image: url(Bilder/menu-drinks.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(Bilder/menu-drinks.jpg);
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: 50% 63%;
 }
 
 .dessert {
-  background-image: url(Bilder/menu-dessert.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(Bilder/menu-dessert.jpg);
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: 20% 80%;
 }
 
 figcaption {
@@ -135,6 +146,23 @@ figcaption {
   right: -25px;
 }
 
+.text-right,
+.text-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 0 3.5rem 0;
+  margin: 0 10px;
+}
+
+.text-container {
+  font-family: "Caveat", cursive;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
 .footer {
   height: 15vh;
   background-color: rgb(48, 48, 48);
@@ -151,4 +179,69 @@ figcaption {
 .copyright {
   text-align: center;
   font-size: small;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-links {
+    flex-direction: column;
+    font-size: 14px;
+    gap: 4px;
+    padding-top: 5px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .text-right {
+    margin: 0 80px 0 0;
+  }
+
+  .text-left {
+    margin: 0 0 0 60px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .nav {
+    font-size: 1.3rem;
+  }
+
+  .menu-header {
+    margin: 3rem auto 0 auto;
+    font-size: 3.5rem;
+  }
+
+  .menu {
+    margin: 5rem auto 2rem auto;
+    gap: 1rem;
+  }
+
+  .text-right {
+    margin: 0 120px 0 40px;
+  }
+
+  .text-left {
+    margin: 0 40px 0 100px;
+  }
+
+  .polaroid-container {
+    width: 14rem;
+    height: 14.5rem;
+    padding: 1.5rem 1.5rem 4.5rem 1.5rem;
+  }
+
+  figcaption {
+    font-size: 2rem;
+    margin-top: 0.7rem;
+  }
+
+  .text-container {
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .container {
+    max-width: 1200px;
+    margin: 3rem auto;
+  }
 }
