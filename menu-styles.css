@@ -20,7 +20,11 @@ html {
 }
 
 body {
-  background-color: #252525;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(Bilder/background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 50%;
   color: var(--text-color);
   font-family: "Inter", sans-serif;
   width: 100%;
@@ -182,6 +186,10 @@ figcaption {
 }
 
 @media only screen and (max-width: 600px) {
+  .nav {
+    font-size: 1rem;
+  }
+
   .footer-links {
     flex-direction: column;
     font-size: 14px;
