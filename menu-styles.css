@@ -20,7 +20,8 @@ html {
 }
 
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(Bilder/background.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url(Bilder/background.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -205,6 +206,10 @@ figcaption {
 
   .text-left {
     margin: 0 0 0 60px;
+  }
+
+  .text-container {
+    font-size: 1.3rem;
   }
 }
 
