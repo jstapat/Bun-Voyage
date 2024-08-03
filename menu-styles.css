@@ -80,7 +80,6 @@ body {
   display: grid;
   place-items: center;
   margin: 0 0 4rem -1rem;
-
 }
 
 .polaroid-container {
@@ -204,7 +203,7 @@ figcaption {
   }
 
   .polaroid {
-    margin-right: 2rem;
+    margin: 0 0.5rem;
   }
 }
 
@@ -231,7 +230,6 @@ figcaption {
     height: 9.5rem;
     padding: 1rem 1rem 3rem 1rem;
   }
-  
 }
 
 @media only screen and (min-width: 1000px) {
