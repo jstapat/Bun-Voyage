@@ -46,7 +46,7 @@ body {
 
 .nav-link {
   color: var(--text-color);
-  margin: 0px 20px;
+  margin: 0px 20px 0 0;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
 }
@@ -79,7 +79,8 @@ body {
 .polaroid {
   display: grid;
   place-items: center;
-  margin-bottom: 4rem;
+  margin: 0 0 4rem -1rem;
+
 }
 
 .polaroid-container {
@@ -161,6 +162,10 @@ figcaption {
   margin: 0 10px;
 }
 
+.text-right {
+  margin: 0 4rem 0 0;
+}
+
 .text-container {
   font-family: "Caveat", cursive;
   font-size: 1.2rem;
@@ -197,11 +202,20 @@ figcaption {
     gap: 4px;
     padding-top: 5px;
   }
+
+  .polaroid {
+    margin-right: 2rem;
+  }
 }
 
 @media only screen and (min-width: 600px) {
+  .container {
+    max-width: 800px;
+    margin: 3rem auto;
+  }
+
   .text-right {
-    margin: 0 80px 0 0;
+    margin: 0 120px 0 0;
   }
 
   .text-left {
@@ -211,9 +225,21 @@ figcaption {
   .text-container {
     font-size: 1.3rem;
   }
+
+  .polaroid-container {
+    width: 9rem;
+    height: 9.5rem;
+    padding: 1rem 1rem 3rem 1rem;
+  }
+  
 }
 
 @media only screen and (min-width: 1000px) {
+  .container {
+    max-width: 900px;
+    margin: 3rem auto;
+  }
+
   .nav {
     font-size: 1.3rem;
   }
@@ -229,7 +255,7 @@ figcaption {
   }
 
   .text-right {
-    margin: 0 120px 0 40px;
+    margin: 0 150px 0 40px;
   }
 
   .text-left {
@@ -252,9 +278,9 @@ figcaption {
   }
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 3rem auto;
   }
 }
